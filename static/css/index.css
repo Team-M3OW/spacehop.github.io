@@ -268,6 +268,10 @@ body {
   box-shadow: var(--shadow-md);
   transition: var(--transition);
   border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .results-carousel .item:hover {
@@ -279,13 +283,11 @@ body {
 .results-carousel video {
   margin: 0;
   border-radius: var(--border-radius);
-  width: auto;
-  max-width: 100%;
-  max-height: 500px;
-  height: auto;
+  width: 100%;
+  max-width: 750px;
+  max-height: 420px;
+  object-fit: contain;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .results-carousel .subtitle {
