@@ -110,18 +110,7 @@
   }
   </script>
   
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Machine Learning Research Lab, Delhi Technological University",
-    "url": "https://dtu.ac.in",
-    "logo": "https://team-m3ow.github.io/spacehop.github.io/static/images/favicon.ico",
-    "sameAs": [
-      "https://github.com/Team-M3OW"
-    ]
-  }
-  </script>
+
 </head>
 <body>
 
@@ -129,31 +118,7 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <a href="https://github.com/Team-M3OW" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Team M3OW @ DTU</h5>
-            <p>Machine Learning & Cybersecurity research lab at Delhi Technological University.</p>
-            <span class="work-venue">GitHub Organization</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
+
 
   <main id="main-content">
   <section class="hero">
@@ -168,15 +133,15 @@
               <span class="author-block">
                 <a href="https://www.linkedin.com/in/arsh-abbas-naqvi-550800307" target="_blank">Arsh Abbas Naqvi</a><sup>*</sup>,</span>
               <span class="author-block">
-                <a>Kavinder Singh</a>,</span>
+                Kavinder Singh,</span>
               <span class="author-block">
-                <a>Lavendra Gautam</a>,</span>
+                Lavendra Gautam,</span>
               <span class="author-block">
-                <a>Anil Singh Parihar</a>,</span>
+                Anil Singh Parihar,</span>
               <span class="author-block">
-                <a>Shakti Bangare</a>,</span>
+                Shakti Bangare,</span>
               <span class="author-block">
-                <a>Ravi Kumar Lagisetty</a>
+                Ravi Kumar Lagisetty
               </span>
             </div>
 
@@ -228,7 +193,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/carousel1.jpg" alt="SPACE-HOP method overview" style="border-radius: 12px; box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);"/>
+      <img src="static/images/teaser.jpg" alt="SPACE-HOP teaser" style="border-radius: 12px; box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);"/>
       <h2 class="subtitle has-text-centered">
         SPACE-HOP estimates 6-DoF spacecraft pose from a single monocular image via JEPA pretraining and Hopf fibration classification.
       </h2>
@@ -265,25 +230,25 @@
        <div class="item">
         <img src="static/images/carousel1.jpg" alt="SPACE-HOP method overview" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          Method overview: JEPA pretraining with keypoint-anchored masking and Hopf-based pose estimation.
+          JEPA architecture with keypoint-anchored masking strategy for geometry-aware pretraining.
         </h2>
       </div>
       <div class="item">
         <img src="static/images/carousel2.jpg" alt="Qualitative results on SPEED+" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          Qualitative results on SPEED+ dataset across synthetic and real domains.
+          Qualitative pose estimation results on SPEED+ across synthetic, Sunlamp, and Lightbox domains.
         </h2>
       </div>
       <div class="item">
         <img src="static/images/carousel3.jpg" alt="Ablation studies" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          Ablation studies on masking strategy, Hopf grid resolution, and pretraining objectives.
+          Hopf fibration diagram: uniform SO(3) anchor grid for rotation classification and refinement.
         </h2>
      </div>
      <div class="item">
       <img src="static/images/carousel4.jpg" alt="Hopf fibration visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
-        Hopf fibration grid on SO(3) used for rotation classification and refinement.
+        Attention maps showing cross-attention between [CLS] token and patch tokens for anchor selection.
       </h2>
     </div>
   </div>
