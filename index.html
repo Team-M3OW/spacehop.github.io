@@ -189,18 +189,18 @@
 </div>
 </section>
 
-<!-- Teaser image -->
+<!-- Teaser: Figure 1 - JEPA Pretraining -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/teaser.jpg" alt="SPACE-HOP teaser" style="border-radius: 12px; box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);"/>
+      <img src="static/images/fig1_jepa.png" alt="Figure 1: Embedding-Predictive Pretraining with Keypoint-Anchored Masking" style="border-radius: 12px; box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);"/>
       <h2 class="subtitle has-text-centered">
-        SPACE-HOP estimates 6-DoF spacecraft pose from a single monocular image via JEPA pretraining and Hopf fibration classification.
+        Figure 1: Embedding-Predictive Pretraining with Keypoint-Anchored Masking. Given a spacecraft image, target patches are selected around projected structural keypoints (e.g., corners, antennas), while the remaining visible patches form the context. A Context Encoder processes unmasked patches, and a Target Encoder extracts latent features for masked patches. A lightweight transformer predicts masked target embeddings from context embeddings in latent space.
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser image -->
+<!-- End teaser -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -226,29 +226,30 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3 has-text-centered">Figures</h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <img src="static/images/carousel1.jpg" alt="SPACE-HOP method overview" loading="lazy"/>
+        <img src="static/images/fig3_hopf.png" alt="Figure 3: SPACE-HOP Pipeline" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          JEPA architecture with keypoint-anchored masking strategy for geometry-aware pretraining.
+          Figure 3: SPACE-HOP Diagram detailing the Input & Backbone, Parallel Linear Heads, and Pose Recovery stages. Rotation is formulated as a classification-and-refinement task over a discretized SO(3) manifold using Hopf fibration.
         </h2>
       </div>
       <div class="item">
-        <img src="static/images/carousel2.jpg" alt="Qualitative results on SPEED+" loading="lazy"/>
+        <img src="static/images/fig2_attention.png" alt="Figure 2: Attention Maps Comparison" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          Qualitative pose estimation results on SPEED+ across synthetic, Sunlamp, and Lightbox domains.
+          Figure 2: Comparison of attention maps produced by a JEPA-pretrained backbone and a supervised ViT-B/224 backbone across multiple domains of the SPEED+ dataset. The JEPA-pretrained model exhibits sharper focus on structural keypoints.
         </h2>
       </div>
       <div class="item">
-        <img src="static/images/carousel3.jpg" alt="Ablation studies" loading="lazy"/>
+        <img src="static/images/fig6_qualitative.png" alt="Figure 6: Qualitative Pose Predictions" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          Hopf fibration diagram: uniform SO(3) anchor grid for rotation classification and refinement.
+          Figure 6: Qualitative pose predictions across domains. Predicted bounding boxes and wireframe overlays on spacecraft imagery from Synthetic, Sunlamp, and Lightbox domains.
         </h2>
      </div>
      <div class="item">
-      <img src="static/images/carousel4.jpg" alt="Hopf fibration visualization" loading="lazy"/>
+      <img src="static/images/fig5_wobble.png" alt="Figure 5: Orbit Wobble Visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
-        Attention maps showing cross-attention between [CLS] token and patch tokens for anchor selection.
+        Figure 5: Orbit wobble visualisation obtained by rotating the input image K=16 times, predicting the pose for each rotation, and un-rotating all predictions back to a common canonical frame. Bimodal dispersion reveals symmetry-breaking failure modes.
       </h2>
     </div>
   </div>
@@ -274,32 +275,7 @@
 </section>
 <!-- End youtube video -->
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Qualitative Results</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
+
 
 <!-- Paper poster -->
 <section class="hero is-small is-light">
