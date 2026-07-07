@@ -279,8 +279,9 @@ body {
 .results-carousel video {
   margin: 0;
   border-radius: var(--border-radius);
-  width: 100%;
-  max-width: 800px;
+  width: auto;
+  max-width: 100%;
+  max-height: 500px;
   height: auto;
   display: block;
   margin-left: auto;
