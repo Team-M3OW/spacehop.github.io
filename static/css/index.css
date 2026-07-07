@@ -261,17 +261,13 @@ body {
 .results-carousel .item {
   margin: 1rem;
   overflow: hidden;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0.5rem;
   font-size: 0;
   background: var(--background-primary);
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-md);
   transition: var(--transition);
   border: 1px solid var(--border-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .results-carousel .item:hover {
@@ -281,13 +277,21 @@ body {
 
 .results-carousel .item img,
 .results-carousel video {
-  margin: 0;
+  margin: 0 auto;
   border-radius: var(--border-radius);
+  display: block;
+}
+
+.results-carousel .item img.landscape {
   width: 100%;
   max-width: 750px;
-  max-height: 420px;
-  object-fit: contain;
-  display: block;
+  height: auto;
+}
+
+.results-carousel .item img.portrait {
+  height: 300px;
+  width: auto;
+  max-width: 100%;
 }
 
 .results-carousel .subtitle {
